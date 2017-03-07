@@ -29,11 +29,11 @@ function draw() {
     greenValue = random(255);
     blueValue = random(255);
 
-    x = map(mouseX, 0, windowWidth, 50, 150);
-    y = map(mouseY, 0, windowHeight, 50, 150);
+    x = map(mouseX, 0, windowWidth, 50, 250);
+    y = map(mouseY, 0, windowHeight, 50, 250);
 
     if (mouseIsPressed == false) {
-      fill(redValue, greenValue, blueValue);
+      fill(redValue, greenValue, blueValue, 80);
       stroke(greenValue, blueValue, redValue);
       strokeWeight(5);
 
@@ -45,7 +45,7 @@ function draw() {
       ellipse(random(800), y6, y, x);
     }
     else{
-      fill(random(255));
+      fill(random(255), 80);
       stroke(random(255));
       strokeWeight(5);
 
